@@ -4,6 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F. Jaworski</title>
+  <meta name="description" content="F. Jaworski — portfolio muzyczne i wizualne. Albumy ambientowe i eksperymentalne, projekty artystyczne, marmurkowanie ebru i chusty artystyczne.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="F. Jaworski — portfolio">
+  <meta property="og:description" content="Portfolio muzyczne i wizualne — albumy ambientowe i eksperymentalne, projekty artystyczne, marmurkowanie ebru i chusty artystyczne.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
@@ -105,7 +115,6 @@
       <li><a href="#" data-page="projects">Projekty</a></li>
       <li><a href="#" data-page="gallery">Serie</a></li>
       <li><a href="#" data-page="ebru">Marmurkowanie</a></li>
-      <li><a href="#" data-page="about">O mnie</a></li>
       <li><a href="#" data-page="contact">Kontakt</a></li>
     </ul>
     <button class="nav-burger" id="nav-burger" aria-label="menu">
@@ -119,7 +128,6 @@
     <a href="#" data-page="projects">Projekty</a>
     <a href="#" data-page="gallery">Serie</a>
     <a href="#" data-page="ebru">Marmurkowanie</a>
-    <a href="#" data-page="about">O mnie</a>
     <a href="#" data-page="contact">Kontakt</a>
   </div>
 
@@ -157,12 +165,32 @@
     <div id="lightbox-counter"></div>
   </div>
 
+  <script src="js/i18n.js"></script>
   <script src="js/data.js"></script>
   <script src="js/journey.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/subpages.js"></script>
   <script>
     (function() {
+      const PAGE_KEY = { projects:'projekty', gallery:'serie', ebru:'marmurkowanie', contact:'kontakt' };
+
+      function applyLanguage() {
+        document.querySelectorAll('[data-page]').forEach(a => {
+          const key = PAGE_KEY[a.dataset.page];
+          if (key) a.textContent = t(key);
+        });
+        const albumsTitleEl = document.getElementById('albums-title');
+        if (albumsTitleEl) albumsTitleEl.textContent = t('albumy');
+        document.querySelectorAll('.jc-cta').forEach(a => { a.textContent = t('zobacz_album'); });
+        if (typeof overlay !== 'undefined' && overlay && overlay.classList.contains('visible')
+            && typeof currentOverlayPage !== 'undefined' && currentOverlayPage) {
+          openOverlay(currentOverlayPage, currentOverlayExtra);
+        }
+      }
+      window.onLangChange = applyLanguage;
+      initLangSwitch();
+      applyLanguage();
+
       /* iOS Safari czasem ignoruje/zatrzymuje autoplay (np. po przełączeniu
          karty, wygaszeniu ekranu, low power mode) — wymuszamy .play()
          ręcznie i ponawiamy przy powrocie do karty. */
