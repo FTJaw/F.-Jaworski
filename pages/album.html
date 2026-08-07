@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Album</title>
+  <meta name="description" content="Album — F. Jaworski, portfolio muzyczne.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/nav.css">
   <link rel="stylesheet" href="../css/album.css">
 </head>
 <body>
 
   <main id="album-root"></main>
 
+  <script src="../js/i18n.js"></script>
   <script src="../js/data.js"></script>
   <script>
     'use strict';
     const params  = new URLSearchParams(window.location.search);
     const albumId = params.get('id');
     const album   = ALBUMS.find(a => a.id === albumId) || ALBUMS[0];
-    document.title = album.title;
+    document.title = album.title + ' — F. Jaworski';
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) metaDesc.setAttribute('content', (album.desc || '').slice(0, 160));
+    window.onLangChange = render;
 
     function render() {
       const root = document.getElementById('album-root');
@@ -28,10 +38,10 @@
 
       /* streaming links — fixed order, all clickable */
       const platforms = [
-        { name: 'Spotify',     icon: '◉', action: 'Słuchaj'       },
-        { name: 'Apple Music', icon: '◎', action: 'Słuchaj'       },
-        { name: 'Bandcamp',    icon: '◈', action: 'Kup / Słuchaj' },
-        { name: 'SoundCloud',  icon: '◐', action: 'Słuchaj'       },
+        { name: 'Spotify',     icon: '◉', action: t('sluchaj')      },
+        { name: 'Apple Music', icon: '◎', action: t('sluchaj')      },
+        { name: 'Bandcamp',    icon: '◈', action: t('kup_sluchaj')  },
+        { name: 'SoundCloud',  icon: '◐', action: t('sluchaj')      },
       ];
 
       /* match streaming entries from data by name */
@@ -50,7 +60,7 @@
             <span class="stream-icon">${p.icon}</span>
             <div>
               <span class="stream-name">${p.name}</span>
-              <span class="stream-action">niedostępny</span>
+              <span class="stream-action">${t('niedostepny')}</span>
             </div>
           </div>`;
         return `
@@ -67,16 +77,16 @@
 
       root.innerHTML = `
 
-        <a class="album-back" href="../index.html">wszystkie albumy</a>
+        <a class="album-back" href="../index.html">${t('wszystkie_albumy')}</a>
 
         <section class="album-hero">
           <div class="album-hero-bg" id="hero-bg"></div>
           <div class="album-hero-veil"></div>
 
           <div class="album-hero-left">
-            <span class="album-eyebrow">${album.year}</span>
+            <span class="album-eyebrow">${tYear(album.year)}</span>
             <h1 class="album-title-h">${album.title}</h1>
-            <p class="album-desc-h">${album.desc}</p>
+            <p class="album-desc-h">${td(album,'desc')}</p>
           </div>
 
           <div class="album-hero-right">
@@ -93,7 +103,7 @@
 
           <!-- left: tracklist only -->
           <section class="album-tracks">
-            <span class="section-label">Tracklista</span>
+            <span class="section-label">${t('tracklista')}</span>
             <div class="tracklist">
               ${album.tracks.map((tr, i) => `
                 <div class="tl-row">
@@ -105,7 +115,7 @@
 
           <!-- right: streaming + buy -->
           <section class="album-streaming">
-            <span class="section-label">Słuchaj i kup</span>
+            <span class="section-label">${t('sluchaj_i_kup')}</span>
             <div class="streaming-grid">
               ${streamLinks}
 
@@ -122,6 +132,7 @@
     }
 
     render();
+    initLangSwitch();
   </script>
 </body>
 </html>
