@@ -42,8 +42,7 @@ function buildSections() {
     titleSec.dataset.ai = ai;
     titleSec.innerHTML = `
       <div class="jt-meta">
-        <span class="jt-num">${String(ai+1).padStart(2,'0')} / ${String(ALBUMS.length).padStart(2,'0')}</span>
-        <span class="jt-year">${album.year}</span>
+        <span class="jt-year">${tYear(album.year)}</span>
       </div>
       <h2 class="jt-title">${album.title}</h2>`;
     journey.appendChild(titleSec);
