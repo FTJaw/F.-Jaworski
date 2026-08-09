@@ -253,7 +253,7 @@ const PROJECTS = [
     year:'2018–2026',
     tag:'sound art',
     desc:'Projekt dźwiękowy będący wyrazem ekspresji i poszukiwań. Ociera się o szeroką gamę gatunków muzycznych, głównie koncentrując na ambiencie i muzyce eksperymentalnej. Utowry są na tyle rozbudowane i angarzujące, że forma sceniczna czy słuchania w tle mija się z celem i nie daje możliwości usłyszenia tego co ukryte między dźwiękami',
-    desc_en:'A sound project that reflects expression and exploration. It touches on a wide range of musical genres, primarily focusing on ambient and experimental music. The pieces are so complex and engaging that a staged format or background listening defeats the purpose and prevents us from hearing what's hidden between the sounds.',
+    desc_en:'A sound project that reflects expression and exploration. It touches on a wide range of musical genres, primarily focusing on ambient and experimental music. The pieces are so complex and engaging that a staged format or background listening defeats the purpose and prevents us from hearing what is hidden between the sounds.',
     tracks:[],
   },
   {
