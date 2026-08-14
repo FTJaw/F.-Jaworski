@@ -275,7 +275,7 @@ const PROJECTS = [
     tag_en:'scarves',
     desc:'Projekt chust artystycznych z wykorzystaniem szerokiego spektrum technik, głównie skupiających się dookoła naturalnych pigmentów i barwników oraz metody marmurkowej.',
     desc_en:'A project of artistic scarves using a wide range of techniques, focused mainly around natural pigments, natural dyes, and the marbling method.',
-    link:'https://lekkost.pl',
+    link:'https://lekkość.pl',
     tracks:[],
   },
   {
