@@ -1,0 +1,280 @@
+======================================================================
+STRUKTURA FOLDERU assets/ — F. Jaworski portfolio
+Wszystko poniżej to pliki, na które strona już 'czeka' w kodzie.
+Wystarczy wgrać plik o dokładnie takiej nazwie i ścieżce,
+a pojawi się automatycznie — bez zmian w kodzie.
+======================================================================
+
+--- WIDEO INTRO (strona główna) ---
+assets/back.mp4
+  (tło wideo za napisem 'F. Jaworski / Szelest / ...' na starcie strony)
+  Format: mp4 (H.264), bez dźwięku, w miarę lekki plik (kilka-kilkanaście MB), zapętlone
+
+--- IKONY STRONY (favicon) — JUŻ GOTOWE, nie musisz nic robić ---
+assets/favicon.svg
+assets/favicon-32.png
+assets/favicon-16.png
+assets/apple-touch-icon.png
+  (czarny kwadrat, bez litery — zgodnie z ostatnią wersją)
+
+--- OBRAZEK DO UDOSTĘPNIANIA (Open Graph / social media) ---
+assets/og-image.jpg
+  (miniaturka pokazująca się przy wklejeniu linku strony na FB / Messenger / Twitter itd.)
+  Zalecany rozmiar: 1200×630 px
+
+
+--- OKŁADKI ALBUMÓW (assets/covers/) ---
+Format: kwadrat (1:1), zalecane min. 1000×1000 px, jpg
+assets/covers/brief-encounter.jpg
+assets/covers/cisza.jpg
+assets/covers/obraz.jpg
+assets/covers/przeprawa.jpg
+assets/covers/puls.jpg
+assets/covers/suspended-folder.jpg
+assets/covers/tlo.jpg
+assets/covers/zima.jpg
+
+
+--- TŁA ALBUMÓW (assets/backgrounds/) ---
+Format: poziome, zalecane min. 1920×1080 px, jpg
+Każdy album ma 3 zdjęcia tła (obecnie strona wyświetla tylko pierwsze -bg-1,
+ale można to łatwo rozszerzyć, żeby tło się zmieniało w trakcie przewijania)
+assets/backgrounds/brief-encounter-bg-1.jpg
+assets/backgrounds/brief-encounter-bg-2.jpg
+assets/backgrounds/brief-encounter-bg-3.jpg
+assets/backgrounds/cisza-bg-1.jpg
+assets/backgrounds/cisza-bg-2.jpg
+assets/backgrounds/cisza-bg-3.jpg
+assets/backgrounds/obraz-bg-1.jpg
+assets/backgrounds/obraz-bg-2.jpg
+assets/backgrounds/obraz-bg-3.jpg
+assets/backgrounds/przeprawa-bg-1.jpg
+assets/backgrounds/przeprawa-bg-2.jpg
+assets/backgrounds/przeprawa-bg-3.jpg
+assets/backgrounds/puls-bg-1.jpg
+assets/backgrounds/puls-bg-2.jpg
+assets/backgrounds/puls-bg-3.jpg
+assets/backgrounds/suspended-folder-bg-1.jpg
+assets/backgrounds/suspended-folder-bg-2.jpg
+assets/backgrounds/suspended-folder-bg-3.jpg
+assets/backgrounds/tlo-bg-1.jpg
+assets/backgrounds/tlo-bg-2.jpg
+assets/backgrounds/tlo-bg-3.jpg
+assets/backgrounds/zima-bg-1.jpg
+assets/backgrounds/zima-bg-2.jpg
+assets/backgrounds/zima-bg-3.jpg
+
+
+--- GALERIA 'SERIE' (fotografia) — assets/gallery/photo/ ---
+Format: dowolny (kadrowane automatycznie), jpg
+
+  seria-1:
+    assets/gallery/photo/seria-1/01.jpg
+    assets/gallery/photo/seria-1/02.jpg
+    assets/gallery/photo/seria-1/03.jpg
+    assets/gallery/photo/seria-1/04.jpg
+    assets/gallery/photo/seria-1/05.jpg
+    assets/gallery/photo/seria-1/06.jpg
+    assets/gallery/photo/seria-1/07.jpg
+    assets/gallery/photo/seria-1/08.jpg
+    assets/gallery/photo/seria-1/09.jpg
+    assets/gallery/photo/seria-1/10.jpg
+    assets/gallery/photo/seria-1/11.jpg
+    assets/gallery/photo/seria-1/12.jpg
+    assets/gallery/photo/seria-1/13.jpg
+    assets/gallery/photo/seria-1/14.jpg
+    assets/gallery/photo/seria-1/15.jpg
+    assets/gallery/photo/seria-1/16.jpg
+    assets/gallery/photo/seria-1/17.jpg
+    assets/gallery/photo/seria-1/18.jpg
+    assets/gallery/photo/seria-1/19.jpg
+    assets/gallery/photo/seria-1/20.jpg
+    assets/gallery/photo/seria-1/21.jpg
+    assets/gallery/photo/seria-1/22.jpg
+    assets/gallery/photo/seria-1/23.jpg
+    assets/gallery/photo/seria-1/24.jpg
+    assets/gallery/photo/seria-1/25.jpg
+    assets/gallery/photo/seria-1/26.jpg
+    assets/gallery/photo/seria-1/27.jpg
+    assets/gallery/photo/seria-1/28.jpg
+    assets/gallery/photo/seria-1/29.jpg
+
+  seria-2:
+    assets/gallery/photo/seria-2/01.jpg
+    assets/gallery/photo/seria-2/02.jpg
+    assets/gallery/photo/seria-2/03.jpg
+    assets/gallery/photo/seria-2/04.jpg
+    assets/gallery/photo/seria-2/05.jpg
+    assets/gallery/photo/seria-2/06.jpg
+    assets/gallery/photo/seria-2/07.jpg
+    assets/gallery/photo/seria-2/08.jpg
+    assets/gallery/photo/seria-2/09.jpg
+    assets/gallery/photo/seria-2/10.jpg
+    assets/gallery/photo/seria-2/11.jpg
+    assets/gallery/photo/seria-2/12.jpg
+    assets/gallery/photo/seria-2/13.jpg
+    assets/gallery/photo/seria-2/14.jpg
+    assets/gallery/photo/seria-2/15.jpg
+    assets/gallery/photo/seria-2/16.jpg
+    assets/gallery/photo/seria-2/17.jpg
+    assets/gallery/photo/seria-2/18.jpg
+    assets/gallery/photo/seria-2/19.jpg
+    assets/gallery/photo/seria-2/20.jpg
+    assets/gallery/photo/seria-2/21.jpg
+    assets/gallery/photo/seria-2/22.jpg
+    assets/gallery/photo/seria-2/23.jpg
+    assets/gallery/photo/seria-2/24.jpg
+
+  seria-3:
+    assets/gallery/photo/seria-3/01.jpg
+    assets/gallery/photo/seria-3/02.jpg
+    assets/gallery/photo/seria-3/03.jpg
+    assets/gallery/photo/seria-3/04.jpg
+    assets/gallery/photo/seria-3/05.jpg
+    assets/gallery/photo/seria-3/06.jpg
+    assets/gallery/photo/seria-3/07.jpg
+    assets/gallery/photo/seria-3/08.jpg
+
+  seria-4:
+    assets/gallery/photo/seria-4/01.jpg
+    assets/gallery/photo/seria-4/02.jpg
+    assets/gallery/photo/seria-4/03.jpg
+    assets/gallery/photo/seria-4/04.jpg
+    assets/gallery/photo/seria-4/05.jpg
+    assets/gallery/photo/seria-4/06.jpg
+    assets/gallery/photo/seria-4/07.jpg
+    assets/gallery/photo/seria-4/08.jpg
+
+  seria-5:
+    assets/gallery/photo/seria-5/01.jpg
+    assets/gallery/photo/seria-5/02.jpg
+    assets/gallery/photo/seria-5/03.jpg
+    assets/gallery/photo/seria-5/04.jpg
+    assets/gallery/photo/seria-5/05.jpg
+    assets/gallery/photo/seria-5/06.jpg
+    assets/gallery/photo/seria-5/07.jpg
+    assets/gallery/photo/seria-5/08.jpg
+    assets/gallery/photo/seria-5/09.jpg
+    assets/gallery/photo/seria-5/10.jpg
+    assets/gallery/photo/seria-5/11.jpg
+    assets/gallery/photo/seria-5/12.jpg
+    assets/gallery/photo/seria-5/13.jpg
+
+  seria-6:
+    assets/gallery/photo/seria-6/01.jpg
+    assets/gallery/photo/seria-6/02.jpg
+    assets/gallery/photo/seria-6/03.jpg
+    assets/gallery/photo/seria-6/04.jpg
+    assets/gallery/photo/seria-6/05.jpg
+    assets/gallery/photo/seria-6/06.jpg
+    assets/gallery/photo/seria-6/07.jpg
+    assets/gallery/photo/seria-6/08.jpg
+    assets/gallery/photo/seria-6/09.jpg
+    assets/gallery/photo/seria-6/10.jpg
+
+  seria-7:
+    assets/gallery/photo/seria-7/01.jpg
+    assets/gallery/photo/seria-7/02.jpg
+    assets/gallery/photo/seria-7/03.jpg
+    assets/gallery/photo/seria-7/04.jpg
+    assets/gallery/photo/seria-7/05.jpg
+    assets/gallery/photo/seria-7/06.jpg
+    assets/gallery/photo/seria-7/07.jpg
+    assets/gallery/photo/seria-7/08.jpg
+    assets/gallery/photo/seria-7/09.jpg
+    assets/gallery/photo/seria-7/10.jpg
+    assets/gallery/photo/seria-7/11.jpg
+    assets/gallery/photo/seria-7/12.jpg
+
+  seria-8:
+    assets/gallery/photo/seria-8/01.jpg
+    assets/gallery/photo/seria-8/02.jpg
+    assets/gallery/photo/seria-8/03.jpg
+    assets/gallery/photo/seria-8/04.jpg
+    assets/gallery/photo/seria-8/05.jpg
+    assets/gallery/photo/seria-8/06.jpg
+    assets/gallery/photo/seria-8/07.jpg
+    assets/gallery/photo/seria-8/08.jpg
+    assets/gallery/photo/seria-8/09.jpg
+
+  seria-9:
+    assets/gallery/photo/seria-9/01.jpg
+    assets/gallery/photo/seria-9/02.jpg
+    assets/gallery/photo/seria-9/03.jpg
+    assets/gallery/photo/seria-9/04.jpg
+    assets/gallery/photo/seria-9/05.jpg
+    assets/gallery/photo/seria-9/06.jpg
+    assets/gallery/photo/seria-9/07.jpg
+    assets/gallery/photo/seria-9/08.jpg
+    assets/gallery/photo/seria-9/09.jpg
+    assets/gallery/photo/seria-9/10.jpg
+    assets/gallery/photo/seria-9/11.jpg
+
+
+--- GALERIA 'SZTUKI WIZUALNE' (ebru / marmurkowanie / chusty) — assets/gallery/ebru/ ---
+Format: dowolny (kadrowane automatycznie), jpg
+
+  seria-1:
+    assets/gallery/ebru/seria-1/01.jpg
+    assets/gallery/ebru/seria-1/02.jpg
+    assets/gallery/ebru/seria-1/03.jpg
+    assets/gallery/ebru/seria-1/04.jpg
+    assets/gallery/ebru/seria-1/05.jpg
+    assets/gallery/ebru/seria-1/06.jpg
+    assets/gallery/ebru/seria-1/07.jpg
+    assets/gallery/ebru/seria-1/08.jpg
+    assets/gallery/ebru/seria-1/09.jpg
+    assets/gallery/ebru/seria-1/10.jpg
+    assets/gallery/ebru/seria-1/11.jpg
+    assets/gallery/ebru/seria-1/12.jpg
+    assets/gallery/ebru/seria-1/13.jpg
+    assets/gallery/ebru/seria-1/14.jpg
+    assets/gallery/ebru/seria-1/15.jpg
+
+  seria-2:
+    assets/gallery/ebru/seria-2/01.jpg
+    assets/gallery/ebru/seria-2/02.jpg
+    assets/gallery/ebru/seria-2/03.jpg
+    assets/gallery/ebru/seria-2/04.jpg
+    assets/gallery/ebru/seria-2/05.jpg
+    assets/gallery/ebru/seria-2/06.jpg
+    assets/gallery/ebru/seria-2/07.jpg
+    assets/gallery/ebru/seria-2/08.jpg
+    assets/gallery/ebru/seria-2/09.jpg
+    assets/gallery/ebru/seria-2/10.jpg
+    assets/gallery/ebru/seria-2/11.jpg
+    assets/gallery/ebru/seria-2/12.jpg
+    assets/gallery/ebru/seria-2/13.jpg
+    assets/gallery/ebru/seria-2/14.jpg
+    assets/gallery/ebru/seria-2/15.jpg
+
+  seria-3:
+    assets/gallery/ebru/seria-3/01.jpg
+    assets/gallery/ebru/seria-3/02.jpg
+    assets/gallery/ebru/seria-3/03.jpg
+    assets/gallery/ebru/seria-3/04.jpg
+    assets/gallery/ebru/seria-3/05.jpg
+    assets/gallery/ebru/seria-3/06.jpg
+    assets/gallery/ebru/seria-3/07.jpg
+    assets/gallery/ebru/seria-3/08.jpg
+    assets/gallery/ebru/seria-3/09.jpg
+    assets/gallery/ebru/seria-3/10.jpg
+    assets/gallery/ebru/seria-3/11.jpg
+    assets/gallery/ebru/seria-3/12.jpg
+    assets/gallery/ebru/seria-3/13.jpg
+    assets/gallery/ebru/seria-3/14.jpg
+    assets/gallery/ebru/seria-3/15.jpg
+
+
+======================================================================
+PODSUMOWANIE
+======================================================================
+Okładki albumów:           8 plików
+Tła albumów:               24 plików
+Galeria 'Serie':           124 plików w 9 seriach
+Galeria 'Sztuki wizualne': 45 plików w 3 seriach
++ 1 wideo intro, 1 obrazek OG, favicon (już gotowe)
+
+Wszystkie ścieżki są względem głównego folderu strony (tam gdzie leży index.html).
+Jeśli jakiegoś pliku zabraknie, strona pokaże po prostu ciemny placeholder
+zamiast błędu — więc możesz wgrywać je stopniowo, w dowolnej kolejności.
